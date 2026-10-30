@@ -142,10 +142,13 @@ This is the working status for the six-day prototype effort. Record meaningful c
 - Tavily Researcher Free showed 1,000 monthly credits, with pay-as-you-go off and requests stopping at the plan limit. One basic search returned one Stack Overflow result; the dashboard then showed 1/1,000 credits used. Tavily usage logs are unavailable on the free plan; empty-result and error behavior remain untested.
 - After local validation, added and staged `.gitignore`; `git check-ignore .env.local` confirms the key file is ignored, while `.env.example` remains trackable. `npm.cmd run lint` and `npm.cmd run build` passed; `package.json` has no dedicated test script.
 - The configured app analysis route, five quick-start examples, streaming stages, cancellation, and provider error paths have not been live-tested because they invoke metered Nebius inference.
-- The checkout began without Git metadata; local Git is now initialized but has no commit or remote. Public hosting remains upcoming, and the empty repository does not establish the project's start date.
+- The local repository currently has one commit dated 2026-10-30 and no remote. Project work is documented from 2026-10-24, after the hackathon's August 26 cutoff; the repository is not public yet.
 - Automated execution is intentionally cut per the blueprint's cut list: there is no constrained sandbox in this prototype, and arbitrary student code is not run. The manual checklist is self-reported and does not establish that a proposed fix passes.
 - The shared production limiter is implemented but still needs Upstash credentials and a live deployment check; local in-process limiting remains the development fallback.
-- No hosted demo, public repository, or demo video exists yet. Devpost still shows no registered hackathon project, so no submission has been made.
+- 2026-10-30 YouTube and Devpost handoff: with the user's confirmation to upload Unlisted and acceptance of the displayed YouTube terms, uploaded `docs/submission/assets/Tracekit-Demo-Walkthrough.mp4` to the user's signed-in channel as **Tracekit Demo Walkthrough**. YouTube shows the video as **Unlisted** at https://youtu.be/haXhk-AOWxo; copyright checks passed. Saved a description that discloses no live Nebius inference and no generated result.
+- Added https://youtu.be/haXhk-AOWxo to the Devpost project details; the site marked Project details complete. Saved the known Additional Info answers and reached the final review page. The draft remains at 3/5 steps because required repository and personal/eligibility information is still incomplete. No final terms declaration was accepted and no project submission was made.
+- The public code repository URL is pending the user's later message; no hosted demo URL exists. Country of residence, age-of-majority and sponsor-employment attestations, learning/career self-assessments, and the final Official Rules/Devpost Terms acceptance were left for the user. Track is Best Apps and Agents; prior-work answer is New based on project work documented from October 24, 2026, after the August 26 cutoff.
+- The video was created as a 63-second silent, captioned walkthrough using the real local interface. It does not trigger inference or show fabricated output.
 
 ### Next
 
@@ -153,4 +156,4 @@ This is the working status for the six-day prototype effort. Record meaningful c
 2. If a free allowance becomes available, exercise the five quick-start examples and inspect output quality, streaming progress, cancellation, and provider errors.
 3. Continue Tavily checks within its free monthly credits: inspect the redacted query, citation quality, no-results state, and search-failure disclosure.
 4. Configure Upstash and verify the shared production rate limits in a hosted deployment.
-5. Deploy using [the deployment runbook](../DEPLOYMENT.md), then complete live visual/error-state review and prepare the public repository, project description, and demo video.
+5. Deploy using [the deployment runbook](../DEPLOYMENT.md), then complete live visual/error-state review and provide the public repository and hosted demo URLs for the Devpost draft.

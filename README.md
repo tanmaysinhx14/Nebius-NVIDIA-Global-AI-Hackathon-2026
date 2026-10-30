@@ -6,7 +6,8 @@ Tracekit classifies compiler and runtime errors with Nemotron Nano, finds curren
 
 **Hackathon track:** Best Apps and Agents  
 **Hosted demo:** Not deployed yet  
-**Screenshots:** A local preview can be opened without provider keys; screenshots and live result images are pending capture.
+**Demo video:** A local 63-second captioned walkthrough is in `docs/submission/assets/Tracekit-Demo-Walkthrough.mp4` and is available on YouTube as [Tracekit Demo Walkthrough](https://youtu.be/haXhk-AOWxo) (Unlisted). It shows the real local interface and intended workflow; it does not show live model output.  
+**Screenshot:** `docs/submission/assets/tracekit-preview.png` shows the local interface; no live-result screenshot is included.
 
 ## How it works
 
@@ -74,9 +75,9 @@ The status card reports whether settings are present. It does not validate a key
 
 ## Current status
 
-The local prototype includes streaming stage updates, cancellation, account model discovery, request-size limits, origin checks, a bounded diff, and local/shared rate limiting. The live Token Factory and Tavily paths have not been verified. There are no measured accuracy, latency, token-cost, or fix-success results; no hosted demo, public repository, or demo video has been verified.
+The local prototype includes streaming stage updates, cancellation, account model discovery, request-size limits, origin checks, a bounded diff, and local/shared rate limiting. Token Factory model listing and one standalone Tavily basic search were verified; the integrated analysis route and live model inference have not been run. There are no measured accuracy, latency, token-cost, or fix-success results, and no hosted demo or public repository yet. The Unlisted walkthrough is attached to the Devpost draft; final submission awaits the public repository URL and user-only declarations.
 
-No screenshot is included yet. Capture one from the local no-key preview before publishing a public showcase. Do not use a screenshot containing credentials, billing details, or disconnected/error states as product evidence.
+The walkthrough is silent and uses on-screen English captions. It explicitly says that live inference is not shown and that no model output is simulated. Do not present it as a live analysis demo.
 
 ## Development
 

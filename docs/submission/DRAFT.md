@@ -14,9 +14,9 @@ The workspace streams stage progress, shows returned model timing and token coun
 
 ## Built With (confirm before submission)
 
-- **Nebius Token Factory** for server-side Nemotron inference; verify the account and exact model IDs with a live call.
-- **NVIDIA Nemotron Nano and Super** for triage and proposed fixes; include **Ultra** only if it is configured and actually invoked.
-- **Tavily Search API** for the redacted error-signature lookup.
+- **Nebius Token Factory** for account-visible model discovery and the server-side inference integration; inference was not run.
+- **NVIDIA Nemotron Nano and Super** are the configured design roles for triage and explanation; neither model was invoked.
+- **Tavily Search API** for the redacted error-signature lookup; one standalone basic search was verified, but the full app route was not run.
 - **Next.js and TypeScript** for the application.
 
 Remove any entry that was not actually used in the final running project.
@@ -25,32 +25,32 @@ Remove any entry that was not actually used in the final running project.
 
 - Account-visible Nano and Super model IDs from the Token Factory model-list API: **`nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B`** and **`nvidia/nemotron-3-super-120b-a12b`**; inference authorization is unverified. Ultra is not configured or used.
 - Track selection: **Best Apps and Agents** (user-confirmed; recheck that the final app and description still match before submission)
-- Prior-work disclosure: **[check whether the project existed before Aug 26, 2026; if so, summarize significant updates since that date using verifiable history]**
+- Prior-work disclosure: **New**. Tracekit work is documented in the local project history from October 24, 2026, after the August 26 cutoff.
 - Observed behavior on the five quick-start examples: **[record what happened, including failures]**
 - Actual model timing/token metadata: **[quote only values returned by the API; do not estimate costs]**
 - Tavily: one basic search on Oct 30, 2026 returned one Stack Overflow result under the free plan; no-results and error behavior remain untested.
 - Hosted demo URL and public repository URL: **[add after deployment/publication]**
+- Demo video: created locally at `assets/Tracekit-Demo-Walkthrough.mp4` (63 seconds, silent with on-screen English captions; no live output simulated), uploaded to YouTube as **Unlisted**, and attached to the Devpost draft: [Tracekit Demo Walkthrough](https://youtu.be/haXhk-AOWxo).
 - Token Factory and Nemotron feedback: use the [tool feedback worksheet](TOOL_FEEDBACK.md) after direct use; do not invent quality or time-saved claims.
 
-## Demo outline (target: 2:40)
+## Demo video contents (63 seconds)
 
-| Time | Show |
-| --- | --- |
-| 0:00–0:20 | Introduce the student debugging problem and the compiler error being used. |
-| 0:20–0:45 | Select a quick-start example and show the error, nearby code, and language. |
-| 0:45–1:15 | Start Tracekit. Say aloud that Nemotron Nano and Super run through Nebius Token Factory; show the Nano → Tavily → Super path and the Ultra decision only if it actually runs. |
-| 1:15–1:55 | Explain the classification, severity, likely cause, fix steps, and line-level proposed-code diff. Point out a returned source's hostname before opening it. |
-| 1:55–2:20 | Point out that Tracekit did not execute the snippet. If demonstrating a manual run, label it as your own check outside Tracekit. |
-| 2:20–2:40 | Close with who the tool is for and what data goes to Nebius versus Tavily. |
+- **0:00–0:06:** Introduce Tracekit as a student debugging-copilot prototype.
+- **0:06–0:18:** Show the real local interface, built-in Python example, and redacted-query preview; no analysis request is sent.
+- **0:18–0:28:** Explain the implemented Nano/Tavily/Super path; state that live output is not shown.
+- **0:28–0:38:** Show the Nebius versus Tavily data boundary.
+- **0:38–0:47:** Explain student review and manual verification.
+- **0:47–0:57:** State what was verified and disclose that metered Nebius inference was not run.
+- **0:57–1:03:** Close with the prototype's next validation step.
 
-Record actual application output. If a provider stage is unavailable or returns no sources, show and describe that state instead of substituting a mock result. Keep the final video under three minutes.
+The video is a silent, captioned walkthrough. It uses the real local interface and contains no generated or simulated model answer. It is not a live analysis demo.
 
-## Before recording
+## Before submission
 
-- Complete the live checks in [the build log](../BUILD_LOG.md) and [deployment runbook](../DEPLOYMENT.md).
+- Add the public repository URL when available; no hosted demo URL exists yet.
+- Keep the YouTube video Unlisted or Public, password-free, and attached to the Devpost draft: [https://youtu.be/haXhk-AOWxo](https://youtu.be/haXhk-AOWxo).
 - Present Tracekit as a student debugging copilot in the selected Best Apps and Agents track; do not imply that it executes or tests submitted code.
-- Use the deployed app and account-enabled model IDs; confirm the live Tavily search and Token Factory calls. Mention Ultra only if it actually runs.
-- Say the Nebius Token Factory and NVIDIA Nemotron usage aloud; do not rely on stage labels alone.
-- Do not state accuracy, time saved, cost, or successful verification without measurements or evidence.
+- Do not imply that the local walkthrough contains a live Token Factory or Nemotron result.
+- Do not state accuracy, time saved, inference cost, or successful fix verification without measurements or evidence.
 - Keep the privacy explanation consistent with the interface and README.
-- Confirm the public repository, hosted URL, and final video are accessible before submitting.
+- Confirm the public repository, hosted URL, and video link are accessible before final submission.
