@@ -1,0 +1,26 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+
+# next.js
+/.next/
+/out/
+
+# build output
+/build
+/dist
+
+# local secrets
+.env*
+!.env.example
+
+# editor and operating system files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+
+# TypeScript
+*.tsbuildinfo
